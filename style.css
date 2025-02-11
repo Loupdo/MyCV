@@ -1,0 +1,94 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+#fistRow{
+    margin-top: 100px;
+
+}
+.sideBar{
+    margin-top: 20px;
+    justify-items: center;
+    height: fit-content;
+}
+
+.sideBar>img{
+    margin-top: 20px;
+    border: 2px solid gray;
+    border-radius: 25px;
+}
+
+
+.sideBar>h2{
+    margin-top: 20px;
+}
+
+.sideBar>ul{
+    list-style: none;
+}
+
+.sideBar>ul>li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+li>img{
+    margin-right: 20px;
+    align-self: self-start;
+    padding-top: 2px ;
+}
+
+.socialLogo{
+    margin:20px;
+}
+
+nav>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 2px solid gray;
+    border-bottom-left-radius: 25px;
+    border-top: none;
+    border-right: none;
+    font-size: 20px;
+}
+
+nav a {
+    color:orange;
+}
+
+#aboutme{
+    padding: 40px;
+}
+
+#aboutme>p,
+#education,
+#work-experiences,
+#skills{
+    padding: 15px 200px 15px 30px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.skill{
+    display: flex;
+    justify-items: center;
+}
+
+.computering{
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.languages{
+    margin-left: 150px; 
+}
