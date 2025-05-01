@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Ludovic M Muller</title>
+    <title>Portfolio Ludovic M Muller</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,20 +14,22 @@
   </head>
   <body>
     <div id="fistRow" class="row">
-      <nav class="col-5 offset-7">
-        <ul>
-          <li>
-            <a href="#aboutme">About Me</a>
-          </li>
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
-          <li>
-            <a href="mailto:ludo.m.muller@gmail.com" target="_blank"
-              >Contact Me</a
-            >
-          </li>
-        </ul>
+      <nav class="col-12 text-end p-3">
+        <button
+          class="btn btn-outline-primary m-1"
+          onclick="showSection('aboutme')"
+          >About Me</button
+        >
+        <button
+          class="btn btn-outline-primary m-1"
+          onclick="showSection('resume')"
+          >Resume</button
+        >
+        <button
+          class="btn btn-outline-primary m-1"
+          onclick="showSection('portfolio')"
+          >Portfolio</button
+        >
       </nav>
     </div>
     <div class="row g-5">
@@ -76,7 +78,8 @@
           /></a>
         </div>
       </div>
-      <div id="aboutme" class="col">
+      <div class="col">
+      <div id="aboutme" class="content-section">
         <h1>About Me</h1>
         <p
           >I am a detail-oriented and analytical professional transitioning from
@@ -93,200 +96,268 @@
           to create impactful web applications and contribute to dynamic
           development teams.
         </p>
-        <div id="resume">
-          <h1>Resume</h1>
-          <div id="education">
-            <h2>Education</h2>
-            <ul>
-              <li
-                ><strong
-                  >2025 - Full Stack Web Development Bootcamp, Johns Hopkins
-                  University</strong
-                >
-                <ul>
-                  <li
-                    >Covered front-end and back-end technologies: HTML, CSS,
-                    JavaScript, React, Node.js, Express</li
-                  >
-                  <li
-                    >Developed projects including a full-stack web application
-                    using MERN stack (MongoDB, Express, React, Node.js)</li
-                  >
-                  <li
-                    >Worked with RESTful APIs, Git version control, and
-                    SQL/NoSQL databases</li
-                  >
-                </ul>
-              </li>
-              <li
-                ><strong
-                  >2007 - 2011 Ph.D. in Analytical Chemistry, Pierre and Marie
-                  Curie University, Paris, France</strong
-                >
-                <ul>
-                  <li
-                    >Thesis: "Very High Mass Resolution for the Characterization
-                    of Biomolecules: Metabolomics and Interactomics"</li
-                  >
-                  <li
-                    >Used R for advanced statistical analysis and data
-                    interpretation in biomolecular research</li
-                  >
-                </ul>
-              </li>
-              <li
-                ><strong
-                  >2004 - 2007 M.S., French Engineering Diploma, Ecole
-                  Polytechnique Universitaire Pierre and Marie Curie, Paris,
-                  France, specializing in Materials Chemistry</strong
-                >
-                <ul>
-                  <li
-                    >Introduction to C programming and basic Linux commands</li
-                  >
-                </ul>
-              </li>
-              <li
-                ><strong
-                  >2002 - 2004 B.S., Materials Science with a Major in Physics
-                  and Chemistry, University of Cergy Pontoise, France (Graduated
-                  with distinction)</strong
-                ></li
+      </div>
+      <div id="resume" class="content-section" style="display:none;">
+        <h1>Resume</h1>
+        <div id="education">
+          <h2>Education</h2>
+          <ul>
+            <li
+              ><strong
+                >2025 - Full Stack Web Development Bootcamp, Johns Hopkins
+                University</strong
               >
-            </ul>
-          </div>
-          <div id="work-experience">
-            <h2>Work Experience</h2>
-            <ul>
-              <li>
-                <strong
-                  >2019 - 2024 | Research Scientist, University of Maryland,
-                  School of Pharmacy, MS Center, Baltimore, MD</strong
+              <ul>
+                <li
+                  >Covered front-end and back-end technologies: HTML, CSS,
+                  JavaScript, React, Node.js, Express</li
                 >
-                <ul>
-                  <li
-                    >Developed and optimized analytical workflows, demonstrating
-                    strong problem-solving skills applicable to debugging and
-                    performance optimization in software development.</li
-                  >
-                  <li
-                    >Managed complex instrumentation, troubleshooting technical
-                    issues—paralleling debugging and maintaining web
-                    applications.</li
-                  >
-                  <li
-                    >Oversaw data management processes, ensuring accuracy and
-                    efficiency, which translates to handling databases and
-                    structured data in web applications.</li
-                  >
-                </ul>
-              </li>
-              <li>
-                <strong
-                  >2016 - 2019 | Research Fellow, National Institutes of Health,
-                  NIDA-IRP, Baltimore, MD</strong
+                <li
+                  >Developed projects including a full-stack web application
+                  using MERN stack (MongoDB, Express, React, Node.js)</li
                 >
-                <ul>
-                  <li
-                    >Automated data analysis workflows, improving
-                    efficiency—experience relevant to scripting, automation, and
-                    backend development.</li
-                  >
-                  <li
-                    >Developed methods for quantitative analysis, showcasing
-                    expertise in handling large datasets, a valuable skill for
-                    data-driven web applications.</li
-                  >
-                  <li
-                    >Collaborated with cross-functional teams, refining
-                    communication skills essential for software development
-                    teams.</li
-                  >
-                </ul>
-              </li>
-              <li>
-                <strong
-                  >2011 - 2016 | Postdoctoral Fellow, National Institutes of
-                  Health, NIDA-IRP, Baltimore, MD</strong
+                <li
+                  >Worked with RESTful APIs, Git version control, and SQL/NoSQL
+                  databases</li
                 >
-                <ul>
-                  <li
-                    >Worked on innovative research projects, applying analytical
-                    and statistical methodologies transferable to algorithm
-                    design and data visualization.</li
-                  >
-                  <li
-                    >Led projects requiring interdisciplinary collaboration,
-                    emphasizing teamwork and adaptability—critical for working
-                    in Agile development environments.</li
-                  >
-                  <li
-                    >Used programming languages like R for statistical analysis,
-                    showcasing a foundation in coding and problem-solving.</li
-                  >
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div id="skills">
-            <h2>Skills</h2>
-            <div class="skills">
-              <div class="technical-skills">
-                <h3>Technical Skills</h3>
-                <ul>
-                  <li
-                    ><strong>Front-End Development:</strong> HTML, CSS
-                    (Bootstrap), JavaScript (ES6+), React</li
-                  >
-                  <li
-                    ><strong>Back-End Development:</strong> Node.js, Express.js,
-                    RESTful APIs</li
-                  >
-                  <li
-                    ><strong>Databases:</strong> MongoDB, Mongoose, SQL, JSON,
-                    Web Storage APIs</li
-                  >
-                  <li
-                    ><strong>Authentication & Security:</strong> JWT
-                    authentication, Express middleware</li
-                  >
-                  <li
-                    ><strong>Development Tools:</strong> Git, GitHub, Postman,
-                    CI/CD basics</li
-                  >
-                  <li
-                    ><strong>Scripting & Programming:</strong> Shell scripting,
-                    R (statistical analysis), Python (data analysis), C (intro
-                    level)</li
-                  >
-                  <li
-                    ><strong>System & Deployment:</strong> Linux (basic
-                    commands), Network Protocols, Static Site Deployment</li
-                  >
-                </ul>
-              </div>
-              <div class="soft-skills">
-                <h3>Soft Skills</h3>
-                <ul>
-                  <li>Problem-solving & debugging</li>
-                  <li>Data analysis & visualization</li>
-                  <li>Collaboration & teamwork (Agile/Scrum)</li>
-                  <li>Technical troubleshooting</li>
-                  <li>Adaptability & continuous learning</li>
-                </ul>
-              </div>
-              <div class="languages">
-                <h3>Languages</h3>
-                <ul>
-                  <li>French: Native</li>
-                  <li>English: Fluent</li>
-                  <li>German: Basic knowledge</li>
-                </ul>
-              </div>
+              </ul>
+            </li>
+            <li
+              ><strong
+                >2007 - 2011 Ph.D. in Analytical Chemistry, Pierre and Marie
+                Curie University, Paris, France</strong
+              >
+              <ul>
+                <li
+                  >Thesis: "Very High Mass Resolution for the Characterization
+                  of Biomolecules: Metabolomics and Interactomics"</li
+                >
+                <li
+                  >Used R for advanced statistical analysis and data
+                  interpretation in biomolecular research</li
+                >
+              </ul>
+            </li>
+            <li
+              ><strong
+                >2004 - 2007 M.S., French Engineering Diploma, Ecole
+                Polytechnique Universitaire Pierre and Marie Curie, Paris,
+                France, specializing in Materials Chemistry</strong
+              >
+              <ul>
+                <li>Introduction to C programming and basic Linux commands</li>
+              </ul>
+            </li>
+            <li
+              ><strong
+                >2002 - 2004 B.S., Materials Science with a Major in Physics and
+                Chemistry, University of Cergy Pontoise, France (Graduated with
+                distinction)</strong
+              ></li
+            >
+          </ul>
+        </div>
+        <div id="work-experience">
+          <h2>Work Experience</h2>
+          <ul>
+            <li>
+              <strong
+                >2019 - 2024 | Research Scientist, University of Maryland,
+                School of Pharmacy, MS Center, Baltimore, MD</strong
+              >
+              <ul>
+                <li
+                  >Developed and optimized analytical workflows, demonstrating
+                  strong problem-solving skills applicable to debugging and
+                  performance optimization in software development.</li
+                >
+                <li
+                  >Managed complex instrumentation, troubleshooting technical
+                  issues—paralleling debugging and maintaining web
+                  applications.</li
+                >
+                <li
+                  >Oversaw data management processes, ensuring accuracy and
+                  efficiency, which translates to handling databases and
+                  structured data in web applications.</li
+                >
+              </ul>
+            </li>
+            <li>
+              <strong
+                >2016 - 2019 | Research Fellow, National Institutes of Health,
+                NIDA-IRP, Baltimore, MD</strong
+              >
+              <ul>
+                <li
+                  >Automated data analysis workflows, improving
+                  efficiency—experience relevant to scripting, automation, and
+                  backend development.</li
+                >
+                <li
+                  >Developed methods for quantitative analysis, showcasing
+                  expertise in handling large datasets, a valuable skill for
+                  data-driven web applications.</li
+                >
+                <li
+                  >Collaborated with cross-functional teams, refining
+                  communication skills essential for software development
+                  teams.</li
+                >
+              </ul>
+            </li>
+            <li>
+              <strong
+                >2011 - 2016 | Postdoctoral Fellow, National Institutes of
+                Health, NIDA-IRP, Baltimore, MD</strong
+              >
+              <ul>
+                <li
+                  >Worked on innovative research projects, applying analytical
+                  and statistical methodologies transferable to algorithm design
+                  and data visualization.</li
+                >
+                <li
+                  >Led projects requiring interdisciplinary collaboration,
+                  emphasizing teamwork and adaptability—critical for working in
+                  Agile development environments.</li
+                >
+                <li
+                  >Used programming languages like R for statistical analysis,
+                  showcasing a foundation in coding and problem-solving.</li
+                >
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="skills">
+          <h2>Skills</h2>
+          <div class="skills">
+            <div class="technical-skills">
+              <h3>Technical Skills</h3>
+              <ul>
+                <li
+                  ><strong>Front-End Development:</strong> HTML, CSS
+                  (Bootstrap), JavaScript (ES6+), React</li
+                >
+                <li
+                  ><strong>Back-End Development:</strong> Node.js, Express.js,
+                  RESTful APIs</li
+                >
+                <li
+                  ><strong>Databases:</strong> MongoDB, Mongoose, SQL, JSON, Web
+                  Storage APIs</li
+                >
+                <li
+                  ><strong>Authentication & Security:</strong> JWT
+                  authentication, Express middleware</li
+                >
+                <li
+                  ><strong>Development Tools:</strong> Git, GitHub, Postman,
+                  CI/CD basics</li
+                >
+                <li
+                  ><strong>Scripting & Programming:</strong> Shell scripting, R
+                  (statistical analysis), Python (data analysis), C (intro
+                  level)</li
+                >
+                <li
+                  ><strong>System & Deployment:</strong> Linux (basic commands),
+                  Network Protocols, Static Site Deployment</li
+                >
+              </ul>
             </div>
+            <div class="soft-skills">
+              <h3>Soft Skills</h3>
+              <ul>
+                <li>Problem-solving & debugging</li>
+                <li>Data analysis & visualization</li>
+                <li>Collaboration & teamwork (Agile/Scrum)</li>
+                <li>Technical troubleshooting</li>
+                <li>Adaptability & continuous learning</li>
+              </ul>
+            </div>
+            <div class="languages">
+              <h3>Languages</h3>
+              <ul>
+                <li>French: Native</li>
+                <li>English: Fluent</li>
+                <li>German: Basic knowledge</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio" class="content-section" style="display:none;">
+        <h1>Project Portfolio:</h1>
+        <div class="container my-5">
+        
+          <!-- Candle Shop -->
+          <div class="mb-5">
+            <h3>🕯️ Candle Shop:</h3>
+            <p><strong>HTML5 | CSS3 | Bootstrap</strong></p>
+            <p>
+              Welcome to The Candle shop, a simple and elegant static e-commerce webpage created as a design and layout exercise using Bootstrap, HTML5, and CSS3. This website displays a variety of candles in a grid layout with responsive design, styled with Bootstrap components.
+            </p>
+            <p>
+              🔗 <a href="https://github.com/Loupdo/candleShop" target="_blank">GitHub Repo</a><br>
+              🌐 <a href="https://loupdo.github.io/candleShop/" target="_blank">Live Demo</a>
+            </p>
+            <img src="image/ScreenshotCandleShop.png" alt="Candle Shop preview" class="preview img-fluid rounded shadow" />
+          </div>
+        
+          <!-- React Shop App -->
+          <div class="mb-5">
+            <h3>🛍️ React Shop App (shop4All):</h3>
+            <p><strong>HTML5 | CSS3 | Bootstrap | JavaScript | Node.js | React</strong></p>
+            <p>
+              This is a basic shopping app built with React using the Context API for global state management. Shop simulated with fakestoreapi.com. The app allows users to register, sign in, and track their cart total. It uses Formik + Yup for form handling and validation, and localStorage to persist data between sessions.
+            </p>
+            <p>
+              🔗 <a href="https://github.com/Loupdo/shop4All" target="_blank">GitHub Repo</a><br>
+              🌐 <a href="https://shop-4-all.vercel.app/" target="_blank">Live Demo</a>
+            </p>
+            <img src="image/ScreenshotShop4All.png" alt="React Shop App preview" class="preview img-fluid rounded shadow" />
+          </div>
+        
+          <!-- iTunesFAV -->
+          <div class="mb-5">
+            <h3>🎵 iTunesFAV:</h3>
+            <p><strong>HTML5 | CSS3 | Bootstrap | JavaScript | Node.js | React</strong></p>
+            <p>
+              iTunesFAV is a responsive React web application that enables users to search for and save their favorite media content (music, podcasts, movies, and more) from the iTunes API. It features a clean UI styled with Bootstrap and allows users to manage a personalized collection of favorite media items.
+            </p>
+            <p>
+              🔗 <a href="https://github.com/Loupdo/frontend-Itunesfav" target="_blank">GitHub Repo (Frontend)</a><br>
+              🔗 <a href="https://github.com/Loupdo/backend-Itunesfav" target="_blank">GitHub Repo (Backend)</a><br>
+              🌐 <a href="https://frontend-itunesfav.onrender.com/" target="_blank">Live Demo</a>
+            </p>
+            <img src="image/ScreenshotiTunesFAV.png" alt="iTunesFAV preview" class="preview img-fluid rounded shadow" />
+          </div>
+        
+          <!-- TODO App -->
+          <div class="mb-5">
+            <h3>📝 TODO-App:</h3>
+            <p><strong>HTML5 | CSS3 | Bootstrap | JavaScript | Node.js | React | MongoDB</strong></p>
+            <p>
+              A full-stack task manager app built with the MERN stack, allowing users to create, update, and delete tasks. The frontend is styled with Bootstrap, and MongoDB handles persistent data storage.
+            </p>
+            <p>
+              🔗 <a href="https://github.com/Loupdo/frontend-todo-app" target="_blank">GitHub Repo (Frontend)</a><br>
+              🔗 <a href="https://github.com/Loupdo/backend-TODO-App" target="_blank">GitHub Repo (Backend)</a><br>
+              🌐 <a href="https://frontend-todo-app-kynt.onrender.com" target="_blank">Live Demo</a>
+            </p>
+            <img src="image/ScreenshotTODO-App.png" alt="TODO App preview" class="preview img-fluid rounded shadow" />
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll(".content-section");
+      sections.forEach((sec) => (sec.style.display = "none"));
+      document.getElementById(sectionId).style.display = "block";
+    }
+  </script>
 </html>
